@@ -1,0 +1,40 @@
+/*This is the css for puzzle web page, this lays out the page
+making sure everything is centered and positioned correctly.*/
+
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
+
+body {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 14pt;
+  text-align: center;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#puzzle-area{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: 400px;
+}
+
+.piece{
+  height: 90px;
+  width: 90px;
+  border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.validpiece:hover {
+  cursor: pointer;
+  color: red;
+  border-color: red;
+}
